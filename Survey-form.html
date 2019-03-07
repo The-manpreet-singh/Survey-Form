@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SurveyForm</title>
+	<style type="text/css">
+		.main{
+			background-color: #abc;
+			
+      width: 100%;
+      height:auto;
+			
+
+		}
+		#title{
+			text-align: center;
+		}
+		#survey-form{
+          text-align:center;
+          
+         
+          background-color: white;
+		}
+    #description{
+      text-align: center;
+      font-size: 20px;
+      color: red;
+    }
+    #name{
+      
+      height:20px;
+          border-radius:5px 5px 5px 5px;
+          background:white;
+          padding:10px;
+          
+          margin-top:8px;
+          border-width: 1px;
+          border-style:solid;
+          border-color: gray;
+          width: 400px;
+          font-size: 20px;
+    }
+     #email{
+      
+      height:20px;
+          border-radius:5px 5px 5px 5px;
+          background:white;
+          padding:10px;
+          
+          margin-top:8px;
+          border-width: 1px;
+          border-style:solid;
+          border-color: gray;
+          width: 400px;
+          font-size: 20px;
+    }
+     #number{
+      
+      height:20px;
+          border-radius:5px 5px 5px 5px;
+          background:white;
+          padding:10px;
+          font-size: 20px
+          margin-top:8px;
+          border-width: 1px;
+          border-style:solid;
+          border-color: gray;
+          width: 30px;
+    }
+     #number1{
+      
+      height:20px;
+          border-radius:5px 5px 5px 5px;
+          background:white;
+          padding:10px;
+          font-size: 20px;
+          margin-top:8px;
+          border-width: 1px;
+          border-style:solid;
+          border-color: gray;
+          width: 280px;
+    }
+    #dropdown{
+      height:20px;
+          border-radius:5px 5px 5px 5px;
+          background:white;
+          padding:10px;
+          font-size: 20px;
+          margin-top:10px;
+          border-width: 1px;
+          border-style:solid;
+          border-color: gray;
+          width: 170px;
+    }
+
+    #comments{
+      height:20px;
+          border-radius:5px 5px 5px 5px;
+          background:white;
+          padding:10px;
+          font-size: 20px;
+          margin-top:10px;
+          border-width: 1px;
+          border-style:solid;
+          border-color: gray;
+          width: 350px;
+    }
+    
+    .labels label input{
+       height:20px;
+        padding:10px;
+        margin-top:8px;
+        width: 70px;
+        font-size: 20px;
+    }
+    #submit{
+       height:40px;
+          
+          background:blue;
+          padding:10px;
+          font-size: 20px;
+          margin-top:20px;
+    }
+
+	</style>
+</head>
+<body class="main">
+    <h1 id="title">Survey Form</h1>
+    <p id="description">FROM</p>
+    <form id="survey-form">
+    	<div >
+    		<div>
+    	       <label id="name-label" for="name"> Name :
+               <input type="text" name="name" id="name" class="input-feild" placeholder="Enter your name" required>
+               </label>
+           </div>
+
+        </div>
+        <div>
+          <div >
+          	<label id="email-label" for="email">Email :
+          
+              
+              	<input type="text" name="Email" id="email" class="input-feild" placeholder="Enter your email" required>
+              	</label>
+              </div>
+         </div>
+         <div>
+         	<div>
+         		<label id="number-label" for="number">Contact-number :
+                <input type="text" value="+91" id="number" disabled="disabled" / >
+         		<input type="text" max="10" min="0" maxlength="10" id="number1" required pattern="[0-9]{10}" title="10 numeric value allow" placeholder="Enter your number">
+         		</label>
+         	</div>
+         </div>
+         <div class="rowtab">
+         	<div id="labels" class="labels">
+         		<label for="gender">Gender : 
+                  <input type="radio" name="gender"  id="kk"/>Male 
+                  <input type="radio" name="gender"  id="pp"/>female 
+                  <input type="radio" name="gender"  id="aa"/>Neutral
+                 
+               </label> 
+         	</div>
+         </div>
+         <div class="rowtab">
+         	<div class="labels">
+         		<label for="hobbies">Hobbies :<input type="checkbox" name="text" value="1"> Dance 
+	                                         <input type="checkbox" name="text" value="2"> Singing 
+                                           <input type="checkbox" name="text" value="3"> Playing
+         		</label>
+         	</div>
+         </div>
+         <div class="rowtab">
+          <div class="labels">
+            <label for="currentPos">Which option best describes your current role?
+              <select id="dropdown" name="currentPos" >
+               <option disabled value>Select an option</option>
+               <option  value="student">Student</option>
+               <option value="job">Full Time Job</option>
+               <option value="learner">Full Time Learner</option>
+               <option value="preferNo">Prefer not to say</option>
+               <option value="other">Other</option>
+              </select>
+              </label>
+          </div>
+         </div>
+         </div>
+         <div class="rowtab">
+           <div class="labels">
+             <label for="comments"  >Any Comments?<textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+             
+             </label>
+            </div>
+         </div>
+     <button id="submit" type="submit">Submit</button>
+  
+    </form>
+</body>
+</html>
